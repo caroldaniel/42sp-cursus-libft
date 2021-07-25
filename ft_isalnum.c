@@ -1,24 +1,21 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/24 16:24:06 by cado-car          #+#    #+#             */
-/*   Updated: 2021/07/24 16:24:06 by cado-car         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 /*
-*	Checks if character passed in parameter is alphanumerical
+*	LIBRARY
+*	#include <ctype.h>
+*	DESCRIPTION
+*	The isalnum() function tests for any character for which isalpha(3) or 
+*	isdigit(3) is true.
+*	The value of the argument must be representable as an unsigned char or the 
+*	value of EOF.
+*	RETURN VALUES
+*	The isalnum() function returns zero if the character tests false and returns 
+*	non-zero if the character tests true.
 */
 
 #include "libft.h"
 
-int	ft_isalnum(char c)
+int	ft_isalnum(int c)
 {
-	if (ft_isalpha == 1 && ft_isdigit == 1)
+	if (ft_isalpha != 0 && ft_isdigit != 0)
 		return (1);
 	else
 		return (0);

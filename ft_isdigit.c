@@ -1,22 +1,11 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/24 16:24:23 by cado-car          #+#    #+#             */
-/*   Updated: 2021/07/24 16:24:23 by cado-car         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 /*
-*	DESCRIPTION:
-*	checks for a digit (0 through 9).
-*	ORIGINAL LIBRARY:
+*	LIBRARY
 *	#include <ctype.h>
-*	PARAMETERS:
-*	int c, which represents an unsigned char
+*	DESCRIPTION
+*	The isdigit() function tests for a decimal digit character.
+*	RETURN VALUES
+*	The isdigit() function returns zero if the character tests false and 
+*	returns non-zero if the character tests true.
 */
 
 #include "libft.h"

@@ -1,17 +1,11 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/24 16:23:48 by cado-car          #+#    #+#             */
-/*   Updated: 2021/07/24 16:23:48 by cado-car         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 /*
-*	Checks if character passed in parameter is alphabetical
+*	LIBRARY
+*	#include <string.h>
+*	DESCRIPTION
+*	The memset() function writes len bytes of value c (converted to an 
+*	unsigned char) to the string b. 
+*	RETURN VALUES
+*	The memset() function returns its first argument.  
 */
 
 #include "libft.h"
@@ -23,7 +17,8 @@ void	*ft_memset(void *s, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		s[i] = c;
+		((unsigned char)s)[i] = c;
+		i++;
 	}
 	return (s);
 }

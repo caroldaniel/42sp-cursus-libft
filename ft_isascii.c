@@ -1,17 +1,12 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/24 16:24:18 by cado-car          #+#    #+#             */
-/*   Updated: 2021/07/24 16:24:18 by cado-car         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 /*
-*	Checks if character passed in parameter can be represented by an ASCII element
+*	LIBRARY
+*	#include <ctype.h>
+*	DESCRIPTION
+*	The isascii() function tests for an ASCII character, which is any character 
+*	between 0 and octal 0177 inclusive.
+*	RETURN VALUES
+*	The isascii() function returns zero if the character tests false and returns 
+*	non-zero if the character tests true.
 */
 
 #include "libft.h"
