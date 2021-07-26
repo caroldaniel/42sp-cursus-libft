@@ -8,4 +8,20 @@
 
 #include "libft.h"
 
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
+{
+	char	*sstr;
+	size_t	i;
+
+	sstr = (char *)malloc((len + 1) * sizeof(char));
+	if (sstr == NULL)
+		return (NULL);
+	i = 0;
+	while (i < len && s[i] != '\0')
+	{
+		sstr[i] = s[start + i];
+		i++;
+	}
+	sstr[i] = '\0';
+	return (sstr);
+}
