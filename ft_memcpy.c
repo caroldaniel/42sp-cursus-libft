@@ -12,9 +12,17 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
+<<<<<<< HEAD
 	size_t			i;
 	unsigned char	*dstc;
 	unsigned char	*srcc;
+||||||| d185b18
+	size_t	i;
+=======
+	size_t	i;
+	char	*dstc;
+	char	*srcc;
+>>>>>>> 3957526ed3e77e336e81b39e073eb82368002b9f
 
 	if (dst == NULL && src == NULL)
 		return (NULL);
@@ -22,9 +30,18 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	dstc = (unsigned char *)dst;
 	srcc = (unsigned char *)src;
 	while (i < n)
+<<<<<<< HEAD
 	{
 		dstc[i] = srcc[i];
 		i++;
 	}
+||||||| d185b18
+	{
+		((unsigned char)dst)[i] = ((unsigned char)src)[i];
+		i++;
+	}
+=======
+		dstc[i] = srcc[i];
+>>>>>>> 3957526ed3e77e336e81b39e073eb82368002b9f
 	return (dst);
 }
