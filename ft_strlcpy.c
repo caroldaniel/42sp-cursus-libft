@@ -1,9 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/07/30 20:25:02 by cado-car          #+#    #+#             */
+/*   Updated: 2021/07/31 11:28:05 by cado-car         ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
 *	LIBRARY
 *	#include <string.h>
 *	DESCRIPTION
 *	strlcpy() copies up to dstsize - 1 characters from the string src to dst, 
 *	NUL-terminating the result if dstsize is not 0.
+*	PARAMETERS
+*	#1. The destiny string in which to copy.
+*	#2. The source string to copy.
+*	#3. The total number of bytes in destiny.
 *	RETURN VALUES
 *	the strlcpy() function returns the length of the string it tried to create.
 */

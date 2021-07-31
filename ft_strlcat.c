@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/07/30 20:24:57 by cado-car          #+#    #+#             */
+/*   Updated: 2021/07/31 11:27:54 by cado-car         ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
 *	LIBRARY
 *	#include <string.h>
@@ -7,6 +19,10 @@
 *	dstsize is 0 or the original dst string was longer than dstsize (in practice 
 *	this should not happen as it means that either dstsize is incorrect or that 
 *	dst is not a proper string).
+*	PARAMETERS
+*	#1. The destiny string in which to concatenate.
+*	#2. The source string to concatenate.
+*	#3. The total number of bytes in destiny.
 *	RETURN VALUES
 *	the strlcat() function returns the length of the string it tried to create.
 */

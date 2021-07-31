@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/07/30 20:23:04 by cado-car          #+#    #+#             */
+/*   Updated: 2021/07/31 11:23:14 by cado-car         ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
 *	LIBRARY
 *	#include <string.h>
@@ -5,6 +17,10 @@
 *	The memmove() function copies len bytes from string src to string dst.  
 *	The two strings may overlap; the copy is always done in a nondestructive 
 *	manner.
+*	PARAMETERS
+*	#1. The destiny pointer in which to copy.
+*	#2. The source pointer to copy.
+*	#3. The number of bytes to copy the source string.
 *	RETURN VALUES
 *	The memmove() function returns the original value of dst.
 */
