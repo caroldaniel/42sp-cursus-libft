@@ -6,7 +6,7 @@
 /*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/31 11:46:17 by cado-car          #+#    #+#             */
-/*   Updated: 2021/07/31 11:48:56 by cado-car         ###   ########lyon.fr   */
+/*   Updated: 2021/07/31 17:59:36 by cado-car         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,8 @@ char	*ft_itoa(int n)
 	number = (char *)malloc((len + 1) * sizeof(char));
 	if (!number)
 		return (NULL);
-	ft_convbase(n, number, (len - 1));
+	number[len--] = '\0';
+	ft_convbase(n, number, len);
 	return (number);
 }
 
