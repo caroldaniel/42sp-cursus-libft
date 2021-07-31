@@ -1,7 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/07/31 11:46:17 by cado-car          #+#    #+#             */
+/*   Updated: 2021/07/31 11:48:56 by cado-car         ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
 *	DESCRIPTION
 *	Allocates (with malloc) and returns a string representing the integer 
 *	received as an argument. Negative numbers must be handled.
+*	PARAMETERS
+*	#1. the integer to convert.
 *	RETURN VALUES
 *	The string representing the integer. NULL if the allocation fails.
 */

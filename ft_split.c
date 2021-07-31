@@ -1,8 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/07/31 11:45:55 by cado-car          #+#    #+#             */
+/*   Updated: 2021/07/31 11:48:25 by cado-car         ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
 *	DESCRIPTION
 *	Allocates (with malloc(3)) and returns an array of strings obtained by 
 *	splitting ’s’ using the character ’c’ as a delimiter. The array must be
 *	ended by a NULL pointer.
+*	PARAMETERS
+*	#1. The string to be split.
+*	#2. The delimiter character.
 *	RETURN VALUES
 *	The array of new strings resulting from the split. 
 *	NULL if the allocation fails.

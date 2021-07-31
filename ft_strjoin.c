@@ -1,7 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/07/31 11:45:46 by cado-car          #+#    #+#             */
+/*   Updated: 2021/07/31 11:47:03 by cado-car         ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
 *	DESCRIPTION
 *	Allocates (with malloc(3)) and returns a new string, which is the result of 
 *	the concatenation of ’s1’ and ’s2’.
+*	PARAMETERS
+*	#1. The prefix string.
+*	#2. The suffix string.
 *	RETURN VALUES
 *	The new string. NULL if the allocation fails.
 */

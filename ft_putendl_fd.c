@@ -1,6 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/07/31 11:46:07 by cado-car          #+#    #+#             */
+/*   Updated: 2021/07/31 11:52:40 by cado-car         ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
 *	DESCRIPTION
 *	Outputs the integer ’n’ to the given file descriptor.
+*	PARAMETERS
+*	#1. The string to output.
+*	#2. The file descriptor on which to write.
 *	RETURN VALUES
 *	-
 */
