@@ -6,7 +6,7 @@
 /*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 20:20:48 by cado-car          #+#    #+#             */
-/*   Updated: 2021/07/31 11:08:14 by cado-car         ###   ########lyon.fr   */
+/*   Updated: 2021/07/31 18:47:44 by cado-car         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int				i;
-	int				sign;
-	unsigned int	total;
+	long	i;
+	long	sign;
+	long	total;
 
 	i = 0;
 	sign = 1;
