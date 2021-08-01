@@ -6,7 +6,7 @@
 /*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/31 11:46:07 by cado-car          #+#    #+#             */
-/*   Updated: 2021/07/31 11:52:40 by cado-car         ###   ########lyon.fr   */
+/*   Updated: 2021/07/31 22:30:35 by cado-car         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ void	ft_putendl_fd(char *s, int fd)
 {
 	size_t	i;
 
+	if (!s)
+		return ;
 	i = 0;
 	while (s[i] != '\0')
 	{
