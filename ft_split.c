@@ -6,7 +6,7 @@
 /*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/31 11:45:55 by cado-car          #+#    #+#             */
-/*   Updated: 2021/07/31 21:56:32 by cado-car         ###   ########lyon.fr   */
+/*   Updated: 2021/07/31 23:08:50 by cado-car         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,19 +24,30 @@
 */
 
 #include "libft.h"
-int	ft_addpart(char **result, char *prev, int size, char c);
-int	ft_count(const char *str, char c);
+void	ft_create(char **result, char const *s, char c);
+int		ft_addpart(char **result, char *prev, int size, char c);
+int		ft_count(const char *str, char c);
 
 char	**ft_split(char const *s, char c)
 {
 	char	**result;
+
+	result = (char **)malloc((ft_count(s, c) + 1) * sizeof(char *));
+	if (!s || !result)
+		return (NULL);
+	ft_create(result, s, c);
+	return (result);
+}
+
+// create string of strings
+void	ft_create(char **result, char const *s, char c)
+{
+	int		i;
+	int		size;
 	char	*prev;
 	char	*next;
-	int		size;
-	int		i;
 
 	i = 0;
-	result = (char **)malloc((ft_count(s, c) + 1) * sizeof(char *));
 	prev = (char *)s;
 	next = (char *)s;
 	while (1)
@@ -52,7 +63,6 @@ char	**ft_split(char const *s, char c)
 		s++;
 	}
 	result[i] = 0;
-	return (result);
 }
 
 // add to the array of strings result the parts separated by char c
