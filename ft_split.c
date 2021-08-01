@@ -6,7 +6,7 @@
 /*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/31 11:45:55 by cado-car          #+#    #+#             */
-/*   Updated: 2021/07/31 23:08:50 by cado-car         ###   ########lyon.fr   */
+/*   Updated: 2021/07/31 23:11:18 by cado-car         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,10 @@ char	**ft_split(char const *s, char c)
 {
 	char	**result;
 
+	if (!s)
+		return (NULL);
 	result = (char **)malloc((ft_count(s, c) + 1) * sizeof(char *));
-	if (!s || !result)
+	if (!result)
 		return (NULL);
 	ft_create(result, s, c);
 	return (result);
