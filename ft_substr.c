@@ -6,7 +6,7 @@
 /*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/31 11:40:26 by cado-car          #+#    #+#             */
-/*   Updated: 2021/07/31 11:41:02 by cado-car         ###   ########lyon.fr   */
+/*   Updated: 2021/07/31 21:58:29 by cado-car         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*sstr;
 	size_t	i;
 
+	if (start >= len)
+		return (NULL);
 	sstr = (char *)malloc((len + 1) * sizeof(char));
 	if (sstr == NULL)
 		return (NULL);
