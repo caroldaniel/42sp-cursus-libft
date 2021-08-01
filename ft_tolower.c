@@ -6,7 +6,7 @@
 /*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 20:25:38 by cado-car          #+#    #+#             */
-/*   Updated: 2021/07/31 11:34:40 by cado-car         ###   ########lyon.fr   */
+/*   Updated: 2021/07/31 22:08:35 by cado-car         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,8 @@
 
 int	ft_tolower(int c)
 {
-	char	ch;
-
-	ch = (unsigned char)c;
-	if (ch >= 'A' && ch <= 'Z')
-		return (c + ('a' - 'A'));
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
 	else
 		return (c);
 }

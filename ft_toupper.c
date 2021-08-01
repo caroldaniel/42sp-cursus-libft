@@ -6,7 +6,7 @@
 /*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 20:25:41 by cado-car          #+#    #+#             */
-/*   Updated: 2021/07/31 11:34:51 by cado-car         ###   ########lyon.fr   */
+/*   Updated: 2021/07/31 22:09:04 by cado-car         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,8 @@
 
 int	ft_toupper(int c)
 {
-	char	ch;
-
-	ch = (unsigned char)c;
-	if (ch >= 'a' && ch <= 'z')
-		return (c - ('a' - 'A'));
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
 	else
 		return (c);
 }

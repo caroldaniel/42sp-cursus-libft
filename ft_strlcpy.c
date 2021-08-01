@@ -6,7 +6,7 @@
 /*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 20:25:02 by cado-car          #+#    #+#             */
-/*   Updated: 2021/07/31 11:28:05 by cado-car         ###   ########lyon.fr   */
+/*   Updated: 2021/07/31 22:10:05 by cado-car         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	size_t	i;
 	size_t	count;
 
+	if (!dst || !src)
+		return (0);
 	i = 0;
 	count = 0;
 	while (src[count] != '\0')
