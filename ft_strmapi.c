@@ -6,7 +6,7 @@
 /*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/31 11:45:41 by cado-car          #+#    #+#             */
-/*   Updated: 2021/07/31 11:49:32 by cado-car         ###   ########lyon.fr   */
+/*   Updated: 2021/07/31 21:51:12 by cado-car         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	while (s[++i] != '\0')
 		c_s[i] = (*f)(i, s[i]);
+	c_s[i] = '\0';
 	return (c_s);
 }
