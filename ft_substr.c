@@ -6,7 +6,7 @@
 /*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/31 11:40:26 by cado-car          #+#    #+#             */
-/*   Updated: 2021/08/01 18:52:45 by cado-car         ###   ########.fr       */
+/*   Updated: 2021/08/02 11:10:40 by cado-car         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,14 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (s == NULL)
 		return (NULL);
 	strlen = ft_strlen((char *)s);
-	if (start >= strlen)
+	if (start > strlen)
 		return (ft_strdup(""));
-	sstr = (char *)malloc((len + 1) * sizeof(char));
+	if (strlen - start >= len)
+		sstr = (char *)malloc((len + 1) * sizeof(char));
+	else
+		sstr = (char *)malloc((strlen - start + 1) * sizeof(char));
 	if (sstr == NULL)
 		return (NULL);
-	ft_strlcpy(sstr, &s[start], len + 1);
+	ft_strlcpy(sstr, (s + start), (len + 1));
 	return (sstr);
 }
