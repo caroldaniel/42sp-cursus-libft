@@ -6,7 +6,7 @@
 /*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 20:20:48 by cado-car          #+#    #+#             */
-/*   Updated: 2021/07/31 18:47:44 by cado-car         ###   ########lyon.fr   */
+/*   Updated: 2021/08/02 16:22:55 by cado-car         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,14 @@
 */
 
 #include "libft.h"
+int	ft_checklimit(int sign);
 
 int	ft_atoi(const char *str)
 {
-	long	i;
-	long	sign;
+	size_t	i;
+	int		sign;
 	long	total;
+	long	prev;
 
 	i = 0;
 	sign = 1;
@@ -43,9 +45,19 @@ int	ft_atoi(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		total *= 10;
-		total += str[i] - '0';
+		prev = total;
+		total = total * 10 + (str[i] - '0');
+		if (total < prev)
+			return (ft_checklimit(sign));
 		i++;
 	}
 	return (total * sign);
+}
+
+int	ft_checklimit(int sign)
+{
+	if (sign > 0)
+		return (-1);
+	else
+		return (0);
 }
