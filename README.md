@@ -168,12 +168,13 @@ In your local repository, run `make`
 $> make 
 ```
 
-> `make` suports 5 flags: 
+> `make` suports 6 flags: 
 > - `make all` or simply `make` compiles only the mandatory functions
 > - `make bonus` compiles the bonus functions
 > - `make clean` deletes the `.o` files generated during compilation
 > - `make fclean` deletes the `.o` and the `libft.a` library file generated
-> - `make re` executes `fclean` and `all` in sequence, recompiling the library
+> - `make re` executes `fclean` and `all` in sequence, recompiling the library without the bonus functions
+> - `make rebonus` executes `fclean` and `bonus` in sequence, recompiling the library with the bonus functions
 
 To use the library in your code you will need to include the header:
 ```c
