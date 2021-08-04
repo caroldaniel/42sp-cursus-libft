@@ -95,21 +95,21 @@ The project
 
 ### Functions from `<ctype.h>`
 
-- [`ft_isalpha`](42sp-cursus_libft/ft_isalpha.c)	- checks  for  an  alphabetic  character
-- [`ft_isdigit`](42sp-cursus_libft/ft_isdigit.c)	- checks for a digit (0 through 9).
-- [`ft_isalnum`](42sp-cursus_libft/ft_isalnum.c)	- checks for an alphanumeric character
-- [`ft_isaacii`](42sp-cursus_libft/ft_isaascii.c)	- checks whether c fits into the ASCII character set
-- [`ft_isprint`](42sp-cursus_libft/ft_isprint.c)	- checks for any printable character
-- [`ft_toupper`](42sp-cursus_libft/ft_toupper.c)	- convert char to uppercase
-- [`ft_tolower`](42sp-cursus_libft/ft_tolower.c)	- convert char to lowercase
+- [`ft_isalpha`](ft_isalpha.c)	- checks  for  an  alphabetic  character
+- [`ft_isdigit`](ft_isdigit.c)	- checks for a digit (0 through 9).
+- [`ft_isalnum`](ft_isalnum.c)	- checks for an alphanumeric character
+- [`ft_isaacii`](ft_isaascii.c)	- checks whether c fits into the ASCII character set
+- [`ft_isprint`](ft_isprint.c)	- checks for any printable character
+- [`ft_toupper`](ft_toupper.c)	- convert char to uppercase
+- [`ft_tolower`](ft_tolower.c)	- convert char to lowercase
 
 ### Functions from `<string.h>`
 
-- [`ft_strlen`](42sp-cursus_libft/ft_strlen.c)	- calculate the length of a string
-- [`ft_memset`](42sp-cursus_libft/ft_memset.c)	- fill memory with a constant byte
-- [`ft_bzero`](42sp-cursus_libft/ft_bzero.c)	- zero a byte string
-- [`ft_memcpy`](42sp-cursus_libft/ft_memcpy.c)	- copy memory area
-- [`ft_memmove`](42sp-cursus_libft/ft_memmove.c)	- copy memory area
+- [`ft_memset`](ft_memset.c)	- fill memory with a constant byte
+- [`ft_strlen`](ft_strlen.c)	- calculate the length of a string
+- [`ft_bzero`](ft_bzero.c)	- zero a byte string
+- [`ft_memcpy`](ft_memcpy.c)	- copy memory area
+- [`ft_memmove`](ft_memmove.c)	- copy memory area
 - [`ft_strlcpy`](42sp-cursus_libft/ft_strlcpy.c)	- copy string to an specific size
 - [`ft_strlcat`](42sp-cursus_libft/ft_strlcat.c)	- concatenate string to an specific size
 - [`ft_strchr`](42sp-cursus_libft/ft_strchr.c)	- locate character in string
