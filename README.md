@@ -98,7 +98,7 @@ The project
 - [`ft_isalpha`](ft_isalpha.c)	- checks  for  an  alphabetic  character
 - [`ft_isdigit`](ft_isdigit.c)	- checks for a digit (0 through 9).
 - [`ft_isalnum`](ft_isalnum.c)	- checks for an alphanumeric character
-- [`ft_isaacii`](ft_isaascii.c)	- checks whether c fits into the ASCII character set
+- [`ft_isaascii`](ft_isascii.c)	- checks whether c fits into the ASCII character set
 - [`ft_isprint`](ft_isprint.c)	- checks for any printable character
 - [`ft_toupper`](ft_toupper.c)	- convert char to uppercase
 - [`ft_tolower`](ft_tolower.c)	- convert char to lowercase
