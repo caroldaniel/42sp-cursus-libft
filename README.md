@@ -110,38 +110,38 @@ The project
 - [`ft_bzero`](ft_bzero.c)	- zero a byte string
 - [`ft_memcpy`](ft_memcpy.c)	- copy memory area
 - [`ft_memmove`](ft_memmove.c)	- copy memory area
-- [`ft_strlcpy`](42sp-cursus_libft/ft_strlcpy.c)	- copy string to an specific size
-- [`ft_strlcat`](42sp-cursus_libft/ft_strlcat.c)	- concatenate string to an specific size
-- [`ft_strchr`](42sp-cursus_libft/ft_strchr.c)	- locate character in string
-- [`ft_strrchr`](42sp-cursus_libft/ft_strrchr.c)	- locate character in string
-- [`ft_strncmp`](42sp-cursus_libft/ft_strncmp.c)	- compare two strings
-- [`ft_memchr`](42sp-cursus_libft/ft_memchr.c)	- scan memory for a character
-- [`ft_memcmp`](42sp-cursus_libft/ft_memcmp.c)	- compare memory areas
-- [`ft_strnstr`](42sp-cursus_libft/ft_strnstr.c)	- locate a substring in a string
+- [`ft_strlcpy`](ft_strlcpy.c)	- copy string to an specific size
+- [`ft_strlcat`](ft_strlcat.c)	- concatenate string to an specific size
+- [`ft_strchr`](ft_strchr.c)	- locate character in string
+- [`ft_strrchr`](ft_strrchr.c)	- locate character in string
+- [`ft_strncmp`](ft_strncmp.c)	- compare two strings
+- [`ft_memchr`](ft_memchr.c)	- scan memory for a character
+- [`ft_memcmp`](ft_memcmp.c)	- compare memory areas
+- [`ft_strnstr`](ft_strnstr.c)	- locate a substring in a string
 
 ### Functions from `<stdlib.h>`
-- [`ft_atoi`](42sp-cursus_libft/ft_atoi.c)	- convert a string to an integer
+- [`ft_atoi`](ft_atoi.c)	- convert a string to an integer
 
 ### Non-standard functions
-- [`ft_substr`](42sp-cursus_libft/ft_substr.c)	- returns a substring from a string
-- [`ft_strjoin`](42sp-cursus_libft/ft_strjoin.c)	- concatenates two strings
-- [`ft_strtrim`](42sp-cursus_libft/ft_strtrim.c)	- trims the beginning and end of string with specific set of chars
-- [`ft_split`](42sp-cursus_libft/ft_split.c)	- splits a string using a char as parameter
-- [`ft_itoa`](42sp-cursus_libft/ft_itoa.c)	- converts a number into a string
-- [`ft_strmapi`](42sp-cursus_libft/ft_strmapi.c)	- applies a function to each character of a string
-- [`ft_striteri`](42sp-cursus_libft/ft_striteri.c)	- applies a function to each character of a string
-- [`ft_putchar_fd`](42sp-cursus_libft/ft_putchar_fd.c)	- output a char to a file descriptor
-- [`ft_putstr_fd`](42sp-cursus_libft/ft_putstr_fd.c)	- output a string to a file descriptor
-- [`ft_putendl_fd`](42sp-cursus_libft/ft_putendl_fd.c)	- output a string to a file descriptor, followed by a new line
-- [`ft_putnbr_fd`](42sp-cursus_libft/ft_putnbr_fd.c)	- output a number to a file descriptor
+- [`ft_substr`](ft_substr.c)	- returns a substring from a string
+- [`ft_strjoin`](ft_strjoin.c)	- concatenates two strings
+- [`ft_strtrim`](ft_strtrim.c)	- trims the beginning and end of string with specific set of chars
+- [`ft_split`](ft_split.c)	- splits a string using a char as parameter
+- [`ft_itoa`](ft_itoa.c)	- converts a number into a string
+- [`ft_strmapi`](ft_strmapi.c)	- applies a function to each character of a string
+- [`ft_striteri`](ft_striteri.c)	- applies a function to each character of a string
+- [`ft_putchar_fd`](ft_putchar_fd.c)	- output a char to a file descriptor
+- [`ft_putstr_fd`](ft_putstr_fd.c)	- output a string to a file descriptor
+- [`ft_putendl_fd`](ft_putendl_fd.c)	- output a string to a file descriptor, followed by a new line
+- [`ft_putnbr_fd`](ft_putnbr_fd.c)	- output a number to a file descriptor
 
 ### Linked list functions
 
-- [`ft_lstnew`](42sp-cursus_libft/ft_lstnew.c)	- creates a new list element
-- [`ft_lstadd_front`](42sp-cursus_libft/ft_lstadd_front.c)	- adds an element at the beginning of a list
-- [`ft_lstsize`](42sp-cursus_libft/ft_lstsize.c)	- counts the number of elements in a list
-- [`ft_lstlast`](42sp-cursus_libft/ft_lstlast.c)	- returns the last element of the list
-- [`ft_lstadd_back`](42sp-cursus_libft/ft_lstadd_back.c)	- adds an element at the end of a list
-- [`ft_lstclear`](42sp-cursus_libft/ft_lstclear.c)	- deletes and free list
-- [`ft_lstiter`](42sp-cursus_libft/ft_lstiter.c)	- applies a function to each element of a list
-- [`ft_lstmap`](42sp-cursus_libft/ft_lstmap.c)	- applies a function to each element of a list
+- [`ft_lstnew`](ft_lstnew.c)	- creates a new list element
+- [`ft_lstadd_front`](ft_lstadd_front.c)	- adds an element at the beginning of a list
+- [`ft_lstsize`](ft_lstsize.c)	- counts the number of elements in a list
+- [`ft_lstlast`](ft_lstlast.c)	- returns the last element of the list
+- [`ft_lstadd_back`](ft_lstadd_back.c)	- adds an element at the end of a list
+- [`ft_lstclear`](ft_lstclear.c)	- deletes and free list
+- [`ft_lstiter`](ft_lstiter.c)	- applies a function to each element of a list
+- [`ft_lstmap`](ft_lstmap.c)	- applies a function to each element of a list
