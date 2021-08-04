@@ -85,5 +85,5 @@ Bonus
 	Score
 </h2>
 <p align=center>
-[![cado-car libft score](https://badge42.herokuapp.com/api/project/cado-car/libft)](https://github.com/JaeSeoKim/badge42)
+[!https://badge42.herokuapp.com/api/project/cado-car/libft](https://github.com/JaeSeoKim/badge42)
 </p>
