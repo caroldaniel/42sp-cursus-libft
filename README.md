@@ -145,3 +145,42 @@ The project
 - [`ft_lstclear`](ft_lstclear.c)	- deletes and free list
 - [`ft_lstiter`](ft_lstiter.c)	- applies a function to each element of a list
 - [`ft_lstmap`](ft_lstmap.c)	- applies a function to each element of a list
+
+---
+<h2>
+Usage
+</h2>
+
+### Requirements
+`libft` requires a *gcc* compiler and some standard libraries.
+
+### Instructions
+
+Clone this repository in your local computer:
+
+```sh
+$> git clone https://github.com/caroldaniel/42sp-cursus_libft.git path/to/libft
+```
+
+In your local repository, run `make`
+
+```sh
+$> make 
+```
+
+> `make` suports 5 flags: 
+> - `make all` or simply `make` compiles only the mandatory functions
+> - `make bonus` compiles the bonus functions
+> - `make clean` deletes the `.o` files generated during compilation
+> - `make fclean` deletes the `.o` and the `libft.a` library file generated
+> - `make re` executes `fclean` and `all` in sequence, recompiling the library
+
+To use the library in your code you will need to include the header:
+```c
+#include "libft.h" 
+```
+
+When compiling your own code with `libft`, don't forget to use the flags:
+```sh
+$> ... -lft -L path/to/libft.a -I path/to/libft.h 
+```
