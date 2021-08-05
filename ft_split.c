@@ -6,7 +6,7 @@
 /*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/31 11:45:55 by cado-car          #+#    #+#             */
-/*   Updated: 2021/08/04 21:42:06 by cado-car         ###   ########lyon.fr   */
+/*   Updated: 2021/08/05 09:58:42 by cado-car         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@
 */
 
 #include "libft.h"
-void	ft_create(char **result, char const *s, char c);
-int		ft_addpart(char **result, char *prev, int size, char c);
+void	ft_createsplit(char **result, char const *s, char c);
+int		ft_addpart(char **result, const char *prev, size_t size, char c);
 int		ft_count(const char *str, char c);
 
 char	**ft_split(char const *s, char c)
@@ -37,38 +37,40 @@ char	**ft_split(char const *s, char c)
 	result = (char **)malloc((ft_count(s, c) + 1) * sizeof(char *));
 	if (!result)
 		return (NULL);
-	ft_create(result, s, c);
+	ft_createsplit(result, s, c);
 	return (result);
 }
 
-void	ft_create(char **result, char const *s, char c)
+void	ft_createsplit(char **result, char const *s, char c)
 {
-	int		i;
-	int		size;
-	char	*prev;
-	char	*next;
+	size_t	i;
+	size_t	j;
+	size_t	size;
+	size_t	prev;
+	size_t	next;
 
 	i = 0;
-	prev = (char *)s;
-	next = (char *)s;
+	j = 0;
+	prev = i;
+	next = i;
 	while (1)
 	{
-		if (c == *s || *s == '\0')
-			next = (char *)s;
+		if (s[i] == c || s[i] == '\0')
+			next = i;
 		size = next - prev;
-		if (size > 1)
-			i += ft_addpart(&result[i], prev, size, c);
-		if (*s == '\0')
+		if (size > 1 || (size == 1 && s[i - 1] != c))
+			j += ft_addpart(&result[j], &s[prev], size, c);
+		if (s[i] == '\0')
 			break ;
 		prev = next;
-		s++;
+		i++;
 	}
-	result[i] = 0;
+	result[j] = NULL;
 }
 
-int	ft_addpart(char **result, char *prev, int size, char c)
+int	ft_addpart(char **result, const char *prev, size_t size, char c)
 {
-	if (c == prev[0])
+	if (*prev == c)
 	{
 		prev++;
 		size--;
