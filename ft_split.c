@@ -6,7 +6,7 @@
 /*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/31 11:45:55 by cado-car          #+#    #+#             */
-/*   Updated: 2021/07/31 23:11:18 by cado-car         ###   ########lyon.fr   */
+/*   Updated: 2021/08/04 21:42:06 by cado-car         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,6 @@ char	**ft_split(char const *s, char c)
 	return (result);
 }
 
-// create string of strings
 void	ft_create(char **result, char const *s, char c)
 {
 	int		i;
@@ -67,7 +66,6 @@ void	ft_create(char **result, char const *s, char c)
 	result[i] = 0;
 }
 
-// add to the array of strings result the parts separated by char c
 int	ft_addpart(char **result, char *prev, int size, char c)
 {
 	if (c == prev[0])
@@ -80,7 +78,6 @@ int	ft_addpart(char **result, char *prev, int size, char c)
 	return (1);
 }
 
-// count how many splits are made in string str with the separator c
 int	ft_count(const char *str, char c)
 {
 	char	*prev;
