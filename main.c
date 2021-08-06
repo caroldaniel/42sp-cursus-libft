@@ -1,33 +1,6 @@
 #include "libft.h"
 #include <stdio.h>
 
-size_t	ft_count(const char *s, char c)
-{
-	size_t	i;
-	size_t	prev;
-	size_t	next;
-	size_t	size;
-	size_t	counter;
-
-	i = 0;
-	prev = i;
-	next = i;
-	counter = 0;
-	while (1)
-	{
-		if (s[i] == c || s[i] == '\0')
-			next = i;
-		size = next - prev;
-		if (size > 1 || (size == 1 && s[i - 1] != c))
-			counter++;
-		if (s[i] == '\0')
-			break ;
-		prev = next;
-		i++;
-	}
-	return (counter);
-}
-
 int main(void)
 {
 	char *str1 = "1-2-3-4-5-6-7-8--8-8--8-4------4--4";
