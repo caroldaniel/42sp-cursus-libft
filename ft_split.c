@@ -6,7 +6,7 @@
 /*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/31 11:45:55 by cado-car          #+#    #+#             */
-/*   Updated: 2021/08/05 09:58:42 by cado-car         ###   ########lyon.fr   */
+/*   Updated: 2021/08/06 15:38:10 by cado-car         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@
 #include "libft.h"
 void	ft_createsplit(char **result, char const *s, char c);
 int		ft_addpart(char **result, const char *prev, size_t size, char c);
-int		ft_count(const char *str, char c);
+size_t	ft_count(const char *s, char c);
 
 char	**ft_split(char const *s, char c)
 {
@@ -80,25 +80,29 @@ int	ft_addpart(char **result, const char *prev, size_t size, char c)
 	return (1);
 }
 
-int	ft_count(const char *str, char c)
+size_t	ft_count(const char *s, char c)
 {
-	char	*prev;
-	char	*next;
-	int		counter;
+	size_t	i;
+	size_t	prev;
+	size_t	next;
+	size_t	size;
+	size_t	counter;
 
+	i = 0;
+	prev = i;
+	next = i;
 	counter = 0;
-	prev = (char *)str;
-	next = (char *)str;
 	while (1)
 	{
-		if (*str == c || *str == '\0')
-			next = (char *)str;
-		if (next - prev > 1)
+		if (s[i] == c || s[i] == '\0')
+			next = i;
+		size = next - prev;
+		if (size > 1 || (size == 1 && s[i - 1] != c))
 			counter++;
-		if (*str == '\0')
+		if (s[i] == '\0')
 			break ;
 		prev = next;
-		str++;
+		i++;
 	}
 	return (counter);
 }
