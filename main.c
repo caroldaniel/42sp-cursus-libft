@@ -50,7 +50,7 @@ int main(void)
 	printf("word count: '%li'\n", ft_count(str1, sep1));
 	while (i < (ft_count(str1, sep1) + 1))
 	{
-		printf("tab[%i]: %s\n", i, tab1[i]);
+		printf("tab[%zu]: %s\n", i, tab1[i]);
 		i++;
 	}
 	i = 0;
@@ -59,7 +59,7 @@ int main(void)
 	printf("word count: '%li'\n", ft_count(str2, sep2));
 	while (i < (ft_count(str2, sep2) + 1))
 	{
-		printf("tab[%i]: %s\n", i, tab2[i]);
+		printf("tab[%zu]: %s\n", i, tab2[i]);
 		i++;
 	}
 	i = 0;
@@ -68,7 +68,7 @@ int main(void)
 	printf("word count: '%li'\n", ft_count(str3, sep3));
 	while (i < (ft_count(str3, sep3) + 1))
 	{
-		printf("tab[%i]: %s\n", i, tab3[i]);
+		printf("tab[%zu]: %s\n", i, tab3[i]);
 		i++;
 	}
 	i = 0;
@@ -77,7 +77,7 @@ int main(void)
 	printf("word count: '%li'\n", ft_count(str4, sep4));
 	while (i < (ft_count(str4, sep4) + 1))
 	{
-		printf("tab[%i]: %s\n", i, tab4[i]);
+		printf("tab[%zu]: %s\n", i, tab4[i]);
 		i++;
 	}
 }
