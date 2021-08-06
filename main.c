@@ -20,7 +20,8 @@ int main(void)
 
 	printf("-------STRING 1-------\n");
 	printf("string: %s\n", str1);
-	printf("word count: '%li'\n", ft_count(str1, sep1));
+	printf("seperator: '%c'\n", sep1);
+	printf("word count: %li\n", ft_count(str1, sep1));
 	while (i < (ft_count(str1, sep1) + 1))
 	{
 		printf("tab[%zu]: %s\n", i, tab1[i]);
@@ -29,7 +30,8 @@ int main(void)
 	i = 0;
 	printf("-------STRING 2-------\n");
 	printf("string: %s\n", str2);
-	printf("word count: '%li'\n", ft_count(str2, sep2));
+	printf("seperator: '%c'\n", sep2);
+	printf("word count: %li\n", ft_count(str2, sep2));
 	while (i < (ft_count(str2, sep2) + 1))
 	{
 		printf("tab[%zu]: %s\n", i, tab2[i]);
@@ -38,7 +40,8 @@ int main(void)
 	i = 0;
 	printf("-------STRING 3-------\n");
 	printf("string: %s\n", str3);
-	printf("word count: '%li'\n", ft_count(str3, sep3));
+	printf("seperator: '%c'\n", sep3);
+	printf("word count: %li\n", ft_count(str3, sep3));
 	while (i < (ft_count(str3, sep3) + 1))
 	{
 		printf("tab[%zu]: %s\n", i, tab3[i]);
@@ -47,7 +50,8 @@ int main(void)
 	i = 0;
 	printf("-------STRING 4-------\n");
 	printf("string: %s\n", str4);
-	printf("word count: '%li'\n", ft_count(str4, sep4));
+	printf("seperator: '%c'\n", sep4);
+	printf("word count: %li\n", ft_count(str4, sep4));
 	while (i < (ft_count(str4, sep4) + 1))
 	{
 		printf("tab[%zu]: %s\n", i, tab4[i]);
