@@ -14,8 +14,11 @@
 <h2 align=center>
 	Final score
 </h2>
+<p align=center width=100px>
+![cado-car's 42Project Score](https://github.com/caroldaniel/caroldaniel-utils/libft_grade.png)
+</p>
 <p align=center>
-![cado-car's 42Project Score](https://badge42.herokuapp.com/api/project/cado-car/libft)
+![cado-car's 42Project Score](https://github.com/caroldaniel/caroldaniel-utils/libftm.png)
 </p>
 
 ---
