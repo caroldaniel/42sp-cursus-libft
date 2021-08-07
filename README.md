@@ -11,13 +11,14 @@
 </p>
 
 ---
-<h2 align=center>
+<div align=center>
+<h2>
 	Final score
 </h2>
-<img align=center src=https://github.com/caroldaniel/caroldaniel-utils/blob/190ecec69ff399a4f253dfbc0ab92dcabb8ceff9/libft_grade.png alt=cado-car's 42Project Score/>
+<img src=https://github.com/caroldaniel/caroldaniel-utils/blob/190ecec69ff399a4f253dfbc0ab92dcabb8ceff9/libft_grade.png alt=cado-car's 42Project Score/>
 <p>Completed + Bonus</p>
-<img align=center src=https://github.com/caroldaniel/caroldaniel-utils/blob/190ecec69ff399a4f253dfbc0ab92dcabb8ceff9/libftm.png alt=cado-car's 42Project Badge/>
-
+<img src=https://github.com/caroldaniel/caroldaniel-utils/blob/190ecec69ff399a4f253dfbc0ab92dcabb8ceff9/libftm.png alt=cado-car's 42Project Badge/>
+</div>
 ---
 
 <h3 align=center>
