@@ -71,7 +71,4 @@ void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
-//Extra
-size_t	ft_count(const char *s, char c);
-
 #endif

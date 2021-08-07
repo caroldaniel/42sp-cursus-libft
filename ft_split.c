@@ -6,7 +6,7 @@
 /*   By: cado-car <cado-car@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/31 11:45:55 by cado-car          #+#    #+#             */
-/*   Updated: 2021/08/06 15:38:10 by cado-car         ###   ########lyon.fr   */
+/*   Updated: 2021/08/07 14:24:08 by cado-car         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 
 #include "libft.h"
 void	ft_createsplit(char **result, char const *s, char c);
-int		ft_addpart(char **result, const char *prev, size_t size, char c);
+size_t	ft_addpart(char **result, const char *prev, size_t size, char c);
 size_t	ft_count(const char *s, char c);
 
 char	**ft_split(char const *s, char c)
@@ -68,7 +68,7 @@ void	ft_createsplit(char **result, char const *s, char c)
 	result[j] = NULL;
 }
 
-int	ft_addpart(char **result, const char *prev, size_t size, char c)
+size_t	ft_addpart(char **result, const char *prev, size_t size, char c)
 {
 	if (*prev == c)
 	{
