@@ -11,6 +11,14 @@
 </p>
 
 ---
+<h2 align=center>
+	Final score
+</h2>
+<p align=center>
+[![cado-car's 42Project Score](https://badge42.herokuapp.com/api/project/cado-car/libft)](https://github.com/JaeSeoKim/badge42)
+</p>
+
+---
 
 <h3 align=center>
 Part 1
@@ -81,14 +89,6 @@ Bonus
 
 ---
 
-<h2 align=center>
-	Final score
-</h2>
-<p align=center>
-
-</p>
-
----
 <h2>
 The project
 </h2>
