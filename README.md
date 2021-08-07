@@ -15,7 +15,7 @@
 	Final score
 </h2>
 <p align=center>
-[![cado-car's 42Project Score](https://badge42.herokuapp.com/api/project/cado-car/libft)](https://github.com/JaeSeoKim/badge42)
+![cado-car's 42Project Score](https://badge42.herokuapp.com/api/project/cado-car/libft)
 </p>
 
 ---
