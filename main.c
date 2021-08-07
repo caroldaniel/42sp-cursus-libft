@@ -34,7 +34,7 @@ int main(void)
 		i++;
 	}
 	i = 0;
-	printf("-------STRING 2-------\n");
+	printf("\n-------STRING 2-------\n");
 	printf("string: '%s'\n", str2);
 	printf("seperator: '%c'\n", sep2);
 	printf("word count: %li\n", ft_count(str2, sep2));
@@ -44,7 +44,7 @@ int main(void)
 		i++;
 	}
 	i = 0;
-	printf("-------STRING 3-------\n");
+	printf("\n-------STRING 3-------\n");
 	printf("string: '%s'\n", str3);
 	printf("seperator: '%c'\n", sep3);
 	printf("word count: %li\n", ft_count(str3, sep3));
@@ -54,7 +54,7 @@ int main(void)
 		i++;
 	}
 	i = 0;
-	printf("-------STRING 4-------\n");
+	printf("\n-------STRING 4-------\n");
 	printf("string: '%s'\n", str4);
 	printf("seperator: '%c'\n", sep4);
 	printf("word count: %li\n", ft_count(str4, sep4));
@@ -64,7 +64,7 @@ int main(void)
 		i++;
 	}
 	i = 0;
-	printf("-------STRING 5-------\n");
+	printf("\n-------STRING 5-------\n");
 	printf("string: '%s'\n", str5);
 	printf("seperator: '%c'\n", sep5);
 	printf("word count: %li\n", ft_count(str5, sep5));
@@ -74,7 +74,7 @@ int main(void)
 		i++;
 	}
 	i = 0;
-	printf("-------STRING 6-------\n");
+	printf("\n-------STRING 6-------\n");
 	printf("string: '%s'\n", str6);
 	printf("seperator: '%c'\n", sep6);
 	printf("word count: %li\n", ft_count(str6, sep6));
