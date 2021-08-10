@@ -120,9 +120,11 @@ The project
 - [`ft_memchr`](ft_memchr.c)	- scan memory for a character
 - [`ft_memcmp`](ft_memcmp.c)	- compare memory areas
 - [`ft_strnstr`](ft_strnstr.c)	- locate a substring in a string
+- [`ft_strdup`](ft_strdup.c)	- creates a dupplicate for the string passed as parameter
 
 ### Functions from `<stdlib.h>`
 - [`ft_atoi`](ft_atoi.c)	- convert a string to an integer
+- [`ft_calloc`](ft_calloc.c)	- allocates memory and sets its bytes' values to 0
 
 ### Non-standard functions
 - [`ft_substr`](ft_substr.c)	- returns a substring from a string
